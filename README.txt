@@ -41,5 +41,10 @@ Breakpad在Linux下的应用
 
 3、生成可读的堆栈信息
     minidump_stackwalk ../dump/b2044a06-f906-4a3f-1070d68e-18eb55b3.dmp ../symbols 
-    
+
+4、执行反汇编指令
+    objdump -S crashapp > crashapp.txt
+
+5、根据堆栈信息中的rip值在crashapp.txt文件中查找对应的程序代码段
+
 -----------------------------------------------------------------------------------------------------------
